@@ -1,0 +1,49 @@
+Arguments: 
+  E:\Software\nodejs\node.exe C:\Users\xpf\.node\corepack\yarn\1.22.19\bin\yarn.js add dotenv
+
+PATH: 
+  E:\Python2 study\Python files\Lib\site-packages\PyQt4;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Process Lasso\;C:\Program Files\EmEditor;E:\Software\nvm;E:\Software\nodejs;C:\Program Files\Git\cmd;C:\Users\xpf\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\xpf\AppData\Local\Programs\Python\Python38\;C:\Users\xpf\AppData\Local\Microsoft\WindowsApps;C:\Users\xpf\AppData\Local\Programs\Microsoft VS Code\bin;E:\Software\nvm;E:\Software\nodejs
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  14.18.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:71:26)
+
+npm manifest: 
+  {
+    "name": "phonebook-backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node index.js",
+      "dev": "nodemon index.js",
+      "build:ui": "rm -rf build && cd ../FullStackOpenPhoneBook && npm run build && cp -r build ../Phonebook-backend"
+    },
+    "author": "xpf",
+    "license": "ISC",
+    "dependencies": {
+      "cors": "^2.8.5",
+      "express": "^4.18.2",
+      "mongoose": "^7.1.0",
+      "morgan": "^1.10.0"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.22"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
