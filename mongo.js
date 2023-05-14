@@ -38,11 +38,11 @@ if (process.argv.length === 3) {
         number: process.argv[4]
     })
 
-    phone.save().then(result => {
+    phone.save().then(() => {
         console.log(`added ${phone.name} number ${phone.number} to phonebook`)
         mongoose.connection.close()
     })
 } else {
-    console.log("Please provide the correct length of parameters")
+    console.log('Please provide the correct length of parameters')
     process.exit(1)
 }

@@ -10,7 +10,7 @@ app.use(cors())
 app.use(express.json())
 app.use(express.static('build'))
 
-morgan.token('body', (request, response) => {
+morgan.token('body', (request,) => {
     const body = request.body
     //console.log('body type: ', typeof(body), 'and body is: ', body)
     return JSON.stringify(body)
@@ -74,7 +74,7 @@ app.get('/api/persons/:id', (request, response, next) => {
 
 app.delete('/api/persons/:id', (request, response, next) => {
     Phone.findByIdAndDelete(request.params.id)
-        .then(resulet => {
+        .then(() => {
             response.status(204).end()
         })
         .catch(error => next(error))
